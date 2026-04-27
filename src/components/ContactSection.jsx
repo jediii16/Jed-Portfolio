@@ -52,7 +52,7 @@ function ContactSection({
           <h3 className="mt-3 font-display text-3xl text-ink">Draft a clean intro email</h3>
           <div className="mt-6 space-y-5">
             {[
-              ['name', 'Name', 'text', 'Your name'],
+              ['name', 'Name', 'text', 'Jed Tenorio'],
               ['email', 'Email', 'email', 'your@email.com'],
             ].map(([name, label, type, placeholder]) => (
               <div key={name}>
@@ -66,7 +66,7 @@ function ContactSection({
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
               <a href={mailtoHref} className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-ink px-6 py-4 text-sm font-semibold text-white transition hover:bg-ink/90">Draft email message <FaArrowRight /></a>
-              <button type="button" onClick={() => setForm({ name: '', email: '', message: '' })} className="inline-flex items-center justify-center rounded-full border border-ink/10 bg-white px-6 py-4 text-sm font-semibold text-ink transition hover:border-coral/40 hover:text-coral">Clear form</button>
+              <button type="button" onClick={() => setForm({ name: '', email: '', message: '' })} className="cursor-pointer inline-flex items-center justify-center rounded-full border border-ink/10 bg-white px-6 py-4 text-sm font-semibold text-ink transition hover:border-coral/40 hover:text-coral">Clear form</button>
             </div>
           </div>
         </div>
